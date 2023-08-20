@@ -11,12 +11,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+
 <body>
-    <header>
-        <section class="bg-[#F9F6E2] flex justify-around items-center h-screen" id="">
+    <header class=" ">
+        
+        <section class="bg-[#F9F6E2] flex flex-col-reverse md:flex-row justify-around items-center h-screen" id="">
             <div class="flex-1 text-center" id="">
-                <span class="font-semibold text-xl" id="">---SALE FEVER---</span>
-                <h1 class="text-5xl font-bold my-7" id="">
+                <span class="font-semibold lg:text-xl" id="">---SALE FEVER---</span>
+                <h1 class="md:text-3xl lg:text-5xl font-bold my-7" id="">
                     Purchase TK 200 or <br> above & get
                     <span class="text-[#E527B2]" id="">
                         20% off
@@ -31,16 +33,16 @@
                 </div>
             </div>
             <div class="flex-1 " id="">
-                <img src="./images/Summer 1.png" alt="" class=" w-[80%]" id="">
+                <img src="./images/Summer 1.png" alt="" class=" p-10 md:p-0 md:w-[80%]" id="">
             </div>
         </section>
     </header>
-    <main class="bg-[#F8F8F8] flex p-10 px-24">
-        <div class="w-[80%]" id="">
+    <main class="bg-[#F8F8F8] flex flex-col-reverse md:flex-row  justify-center p-10 lg:px-24 ">
+        <div class="lg:w-[70%]" id="">
             <!-- Kitchenware -->
             <section class="" id="">
-                <h1 class="text-5xl font-bold  mb-7" id="">Kitchenware</h1>
-                <div class="grid grid-cols-3 gap-x-5" id="">
+                <h1 class="md:text-3xl lg:text-5xl font-bold  mb-7" id="">Kitchenware</h1>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="">
                     <!-- card 1 -->
                     <div class="card  bg-white  cursor-pointer" id="card-1">
                         <figure><img src="./images/prod1.png" alt="Shoes" class="bg-[#1111110D] px-20 py-5 m-5" />
@@ -105,8 +107,8 @@
             </section>
             <!-- Sportswear -->
             <section class="mt-24" id="">
-                <h1 class="text-5xl font-bold  mb-7" id="">Sportswear</h1>
-                <div class="grid grid-cols-3 gap-x-5" id="">
+                <h1 class="md:text-3xl lg:text-5xl font-bold  mb-7" id="">Sportswear</h1>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="">
                     <!-- card 1-->
                     <div class="card  bg-white cursor-pointer " id="card-4">
                         <figure><img src="./images/prod4.png" alt="Shoes" class="bg-[#1111110D] px-14 py-5 m-5" />
@@ -171,8 +173,8 @@
             </section>
             <!-- Furniture -->
             <section class=" mt-24" id="">
-                <h1 class="text-5xl font-bold  mb-7" id="">Furniture</h1>
-                <div class="grid grid-cols-3 gap-x-5" id="">
+                <h1 class="md:text-3xl lg:text-5xl font-bold  mb-7" id="">Furniture</h1>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5" id="">
                     <!-- card 1-->
                     <div class="card  bg-white  cursor-pointer" id="card-7">
                         <figure><img src="./images/prod7.png" alt="Shoes" class="bg-[#1111110D] px-14 py-5 m-5" />
@@ -234,35 +236,35 @@
                 </div>
             </section>
         </div>
-        <div class="ml-7 mt-20" id="">
-            <div class="bg-white p-7 rounded-lg" id="">
-                <h1 class="text-2xl font-semibold" id="">Have coupon?</h1>
+        <div class="mb-7 md:ml-7 md:mt-16 lg:mt-20 md:w-[30%]" id="cart-section">
+            <div class="text-center md:text-left p-5 bg-white md:p-3 lg:p-7 rounded-lg" id="">
+                <h1 class="lg:text-2xl font-semibold" id="">Have coupon?</h1>
                 <div class="join">
-                    <input class="input input-bordered join-item" placeholder="Coupon code" id="coupon-input-field" />
+                    <input class="input md:w-28 lg:w-full input-bordered join-item" placeholder="Coupon code" id="coupon-input-field" />
                     <button class="btn join-item rounded-lg bg-[#E527B2] text-white" id="apply" disabled>Apply</button>
                 </div>
             </div>
-            <div class="bg-white p-7 rounded-lg mt-7 space-y-3" id="">
-                <div class="text-2xl font-semibold space-y-3 mb-8" id="cart-products">
-                    <h1 class="text-2xl font-bold text-center" id="">Cart Items</h1>
+            <div class="bg-white p-5 md:p-3 lg:p-7 rounded-lg mt-7 space-y-3" id="">
+                <div class="lg:text-2xl font-semibold space-y-3 mb-8" id="cart-products">
+                    <h1 class="lg:text-2xl font-bold text-center" id="">Cart Items</h1>
                     <hr>
                     <!-- cart products -->
                 </div>
                 <hr class="">
                 <div class=" space-y-3" id="">
-                    <h1 class="text-2xl font-semibold" id="">
+                    <h1 class="lg:text-2xl font-semibold" id="">
                         Total Price :
                         <span class="" id="total-price">
 
                         </span>
                     </h1>
-                    <h1 class="text-2xl font-semibold" id="">
+                    <h1 class="lg:text-2xl font-semibold" id="">
                         Discount :
                         <span class="" id="discount">
 
                         </span>
                     </h1>
-                    <h1 class="text-2xl font-semibold" id="">
+                    <h1 class="lg:text-2xl font-semibold" id="">
                         Total :
                         <span class="" id="total">
 

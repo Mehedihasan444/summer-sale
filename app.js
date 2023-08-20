@@ -93,4 +93,3 @@ for (const card of cards) {
         showAmount();
     });
 }
-
