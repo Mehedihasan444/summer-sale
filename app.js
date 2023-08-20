@@ -48,14 +48,29 @@ function couponApply(coupon) {
 function showAmount() {
     total = totalPrice - discount;
     const tPrice = document.getElementById('total-price');
-    tPrice.textContent = totalPrice;
+    tPrice.textContent = totalPrice.toFixed(2) + " TK";
     const dis = document.getElementById('discount');
-    dis.textContent = discount;
+    dis.textContent = discount.toFixed(2) + " TK";
     const tot = document.getElementById('total');
-    tot.textContent = total;
+    tot.textContent = total.toFixed(2) + " TK";
 
 }
+function goHome() {
+    window.location.href = "./index.html";
+    totalPrice = 0;
+    discount = 0;
+    total = 0;
+    numberOfCartItem = 1;
 
+    const cartProducts = document.getElementById('cart-products');
+    cartProducts.innerHTML = '';
+    const tPrice = document.getElementById('total-price');
+    const dis = document.getElementById('discount');
+    const tot = document.getElementById('total');
+    tPrice.textContent = '';
+    dis.textContent = '';
+    tot.textContent = '';
+}
 
 
 document.getElementById('apply').addEventListener('click', function () {
